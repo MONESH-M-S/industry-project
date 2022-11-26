@@ -1,0 +1,22 @@
+<header>
+  <div class="industry_info">
+    <div class="title">
+      <h4>Sri Kathirvel Sizing Industry</h4>
+    </div>
+    <div class="status flex align-items-center">
+      <p-badge
+        *ngIf="!connectionStatus"
+        severity="danger"
+        styleClass="mr-2"
+      ></p-badge>
+      <p-badge
+        *ngIf="connectionStatus"
+        severity="success"
+        styleClass="mr-2"
+      ></p-badge>
+      <p class="font-semibold">
+        {{ (connectionStatus ? "connected" : "not connected") | titlecase }}
+      </p>
+    </div>
+  </div>
+</header>
