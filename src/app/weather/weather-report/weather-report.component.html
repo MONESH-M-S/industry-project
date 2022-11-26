@@ -9,7 +9,7 @@
               <span class="block text-700 font-semibold mb-3">Temperature</span>
             </div>
           </div>
-          <p-knob class="text-center" [(ngModel)]="weatherStats[0]" valueTemplate="{value}&#176;C"></p-knob>
+          <p-knob class="text-center" [(ngModel)]="weatherStats[0]" [readonly]="true" valueTemplate="{value}&#176;C"></p-knob>
         </div>
       </div>
       <div class="col-12 md:col-6">
@@ -19,7 +19,7 @@
               <span class="block text-700 font-semibold mb-3">Humidity</span>
             </div>
           </div>
-          <p-knob class="text-center" [(ngModel)]="weatherStats[1]" valueTemplate="{value}%"></p-knob>
+          <p-knob class="text-center" [(ngModel)]="weatherStats[1]" [readonly]="true" valueTemplate="{value}%"></p-knob>
         </div>
       </div>
     </div>
